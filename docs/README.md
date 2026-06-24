@@ -1,6 +1,6 @@
 # Conventions
 
-**All docs must be written in English.**
+**Docs must be written in English.**
 
 ## Structure
 
@@ -9,17 +9,19 @@
 ```
 docs/
 ├── README.md
-├── 0_login.md       ← <N>_<module>.md, sequential
-├── 1_xxx.md
+├── 00_overview.md
+├── 01_login.md       ← <NN>_<module>.md, sequential
+├── 02_xxx.md
 └── ...
 ```
 
-Documents are numbered by exploration order, e.g. login first, then course table: `0_login.md` → `1_xxx.md`.
+Documents are numbered by exploration order, e.g. login first, then course table: `00_overview.md` → `01_login.md`.
 
 ### docs/src/
 
 ```
 src/
+├── README.md
 ├── login/                   ← top-level: by feature
 │   ├── *.har
 │   └── *.js
@@ -39,8 +41,16 @@ Raw capture data and extracted frontend scripts, organized by feature.
 
 ## Module Status
 
-| # | Module | Status |
-|---|--------|--------|
-| 0 | Login | ✅ Done |
-| 1 | Module B | 📋 Pending |
-| 2 | Module C | 📋 Pending |
+| # | Module | Description | Status |
+|---|--------|-------------|--------|
+| 00 | Login | <description> | ✅ Done |
+| 01 | Module B | <description> | 🔄 In Progress |
+| 02 | Module C | <description> | 📋 Pending |
+
+### Module B
+
+| System | Description | Status |
+|--------|-------------|--------|
+| System A | <description> | ✅ Done |
+| System B | <description> | 🔄 In Progress |
+| System C | <description> | 📋 Pending |
